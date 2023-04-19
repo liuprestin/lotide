@@ -10,5 +10,6 @@
     "lib"
   ],
   "author": "Prestin Liu",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
