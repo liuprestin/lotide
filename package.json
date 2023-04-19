@@ -1,0 +1,14 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "Lotide library - clone of lodash",
+  "main": "lib.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lib"
+  ],
+  "author": "Prestin Liu",
+  "license": "MIT"
+}
