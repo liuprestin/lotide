@@ -4,16 +4,20 @@ import { assertArraysEqual } from "./assertArraysEqual.js";
 // given two arrays with basic data types
 // - original array
 // - array of values to remove
-function without(original_arr, remove_arr){
-    let final_arr = original_arr;
-    //check the original array for if they include the value
-    for (let ele of remove_arr){
-        final_arr = final_arr.filter(o_ele => o_ele !== ele);
+function without(original_arr, itemsToRemove){
+    let temp = []; 
+
+    for (let x = 0; x < original_arr.length; x++){
+        if(!(itemsToRemove.includes(original_arr[x]))){
+                console.log(original_arr[itemsToRemove[x]]);
+            temp.push(original_arr[x]);
+        }
     }
-    return final_arr;
+    return temp;
+    
 }
 
 //Sanity testing
 // without currently returns nothing... 
 // iterating through the array and eliminating values is the problem
-without([1,2,3],[3,2,5]); //should return [1]
+console.log(without([1,2,3,67,25],[3,2,5,25])); //should return [1]
