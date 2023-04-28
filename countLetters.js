@@ -9,3 +9,6 @@ function countLetters(sentence){
     let clean_string = sentence.toLower().replace("[^A-Za-z]+", ""); //make sure all elements are 
     console.log(clean_string);
 }
+
+//Test the countLetters function 
+console.log(countLetters("this is my day"));
