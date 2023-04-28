@@ -6,8 +6,18 @@ import {assertEqual} from "./assertEqual.js";
 // not case sensitive
 
 function countLetters(sentence){
-    let clean_string = sentence.toLower().replace("[^A-Za-z]+", ""); //make sure all elements are 
-    console.log(clean_string);
+
+    //remove special characters and spaces
+    let clean_string = sentence.toLowerCase().replace(/(\s+|@|&|'|\(|\)|<|>|#)/g, ""); 
+    let collectedLetters = {};
+
+    //lets parse the string 
+    for (let ele of clean_string){
+        collectedLetters[ele] = (collectedLetters[ele] + 1 )|| 1; //increment by one
+    }
+
+
+    return collectedLetters; 
 }
 
 //Test the countLetters function 
