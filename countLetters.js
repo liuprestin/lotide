@@ -13,7 +13,7 @@ function countLetters(sentence){
 
     //lets parse the string 
     for (let ele of clean_string){
-        collectedLetters[ele] = (collectedLetters[ele] + 1 )|| 1; //increment by one
+        collectedLetters[ele] = (collectedLetters[ele] + 1 )|| 1; //increment by one or if it doesn't exist yet
     }
 
 
