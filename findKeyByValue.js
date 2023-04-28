@@ -6,7 +6,6 @@ import {assertEqual} from "./assertEqual.js";
 function findKeyByValue( collection, key_str){
 
     for (const [key, val] of Object.entries(collection)) {
-        console.log(`${key}: ${val}`);
         if(val == key_str){
             return key;
         }
@@ -21,8 +20,6 @@ const bestTVShowsByGenre = {
     drama:  "The Wire"
   };
   
-  findKeyByValue(bestTVShowsByGenre, "The Wire");
-
-  /*
+ 
   assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-  assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); */
+  assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined); 
