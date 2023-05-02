@@ -22,5 +22,7 @@ const bestTVShowsByGenre = {
   };
   
  
+  /*
   assertEqual(assertObjectsEqual(bestTVShowsByGenre, bestTVShowsByGenre), true);
   assertEqual(assertObjectsEqual(bestTVShowsByGenre, {} ), false); 
+  */

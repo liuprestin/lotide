@@ -1,8 +1,8 @@
 import {assertEqual} from "./assertEqual.js";
-import {assertArraysEqual} form "./assertArraysEqual.js";
+import {assertArraysEqual} from "./assertArraysEqual.js";
 
 //Given 2 objects - check if they are identicle
-// NOTE: this is a primitive version --> a recursive version would be better 
+// NOTE: this is a primitive version --> a recursive version could solve it 
 function eqObjects( collection1, collection2){
 
     for (const [key, val] of Object.entries(collection1)) {

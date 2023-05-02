@@ -7,22 +7,32 @@ import {assertEqual} from "./assertEqual.js";
 
 function letterPositions(sentence){
 
-    //assume it is not case sentitive
-    let clean_string = sentence.toLowerCase(); 
-    let collectedLetters = {};
+    //assume it is not case sentitive and create an array from it
+    let clean_string = sentence.toLowerCase().split(""); 
 
-    //lets parse the string 
-    for (let x = 0; x < clean_string.length; x++){
-        let temp_arr = [x];
-        console.log(collectedLetters[x])
-        //collectedLetters[x] = collectedLetters[x].push(x) || temp_arr; //increment by one or if it doesn't exist yet
+    // create a set of unique vaules of the passed in string
+    let collectedLetters = new Set(sentence.toLowerCase().replace(/\s/g,'').split("")); //this should give us each unique
+    
+    // create an object from that collection 
+    let collectionL =  [...collectedLetters].reduce(
+        (key, value) => {
+            let key_counter = 0;
 
-        // could instead use .indexOF() until it returns a -1 ; replace each instance of a letter with a 1 at that index since we have it 
-        // continue through the loop 
-    }
+            //collect all occurances of a letter 
+            for (let i = 0; i < clean_string.length; i++){
+                if(clean_string[i] == value){
+                    key_counter++;
+                }
+            }
+
+            key[value] = key_counter.toString(); //for each occurance of that letter  
+            return key; 
+        
+        },
+        {}); //object to fill
 
 
-    return collectedLetters; 
+    return collectionL;
 }
 
 //Test the countLetters function 
