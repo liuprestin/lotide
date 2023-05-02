@@ -10,3 +10,9 @@ function myMap(arr, callback){
 
     return new_arr;
 }
+
+//Lets experiment with the function
+
+const words = ["ground", "control", "to", "major", "tom"];
+const results1 = myMap(words, word => word[0]);
+console.log(results1);
