@@ -3,7 +3,8 @@
 // ES6 async way: 
 //import {assertEqual} from "./assertEqual.js";
 
-const assertEqual = require('./assertEqual');
+// Classic way: note not needed if we have Mocha/chai
+// const assertEqual = require('./assertEqual');
 
 // Given an array return a copy of the 1st element 
 // it must be a copy of the value and not the original 
