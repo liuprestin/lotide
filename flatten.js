@@ -19,4 +19,4 @@ function flatten(arr) {
   return rebuild;
 }
 
-console.log(flatten([1, 1, [11,2,[10,11,14,[10]]], 2]));
+module.export = flatten;
