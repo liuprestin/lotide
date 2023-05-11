@@ -1,5 +1,3 @@
-import {assertArraysEqual} from "./assertArraysEqual.js"
-import { eqArrays } from "./eqArrays.js"
 
 // Return the value that is in the middle of the array
 // if the array is even - it will return 2 elements
@@ -28,6 +26,3 @@ function middle(arr){
     }
     return rebuild;
 }
-
-console.log(middle([1])); //should return []
-console.log(middle([1,2,3,4])); //should print a message
