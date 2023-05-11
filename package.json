@@ -4,12 +4,15 @@
   "description": "Lotide library - clone of lodash",
   "main": "lib.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "lib"
   ],
   "author": "Prestin Liu",
   "license": "MIT",
-  "type": "module"
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
 }

@@ -1,6 +1,9 @@
 //similar to: https://lodash.com/docs/4.17.15#head
 
-import {assertEqual} from "./assertEqual.js";
+// ES6 async way: 
+//import {assertEqual} from "./assertEqual.js";
+
+const assertEqual = require('./assertEqual');
 
 // Given an array return a copy of the 1st element 
 // it must be a copy of the value and not the original 
@@ -11,6 +14,5 @@ function head(arr){
 }
 
 
-//test
-assertEqual(head([1,2,3,4]), 1);
-assertEqual(head(["Hello", "World"]), "Hello");
+
+module.exports = head;
