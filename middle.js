@@ -26,3 +26,5 @@ function middle(arr){
     }
     return rebuild;
 }
+
+module.export = middle;
