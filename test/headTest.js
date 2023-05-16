@@ -5,11 +5,8 @@ describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {
     assert.strictEqual(head([1, 2, 3]), 1);
   });
+  it("head(['Hello', 'World']) returns 'Hello' ", () => {
+    assert.strictEqual(head(["Hello", "Hello"]), "Hello");
+  });
   
 });
-
-//OLD test - note: bad practice to leave commented out code like this...
-/*
-assertEqual(head([1,2,3,4]), 1);
-assertEqual(head(["Hello", "World"]), "Hello");
-*/
