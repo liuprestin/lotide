@@ -1,17 +1,12 @@
-//import {assertEqual} from "./assertEqual.js";
-
-
-//take in a sentence and collect each index of a letter 
+// letterPositions(string) take in a sentence and return 
+// collection of each index of a letter 
 // Assumptions:
-// not case sensitive
-
+// - passed in string is not case sensitive
 function letterPositions(sentence){
-
-    //assume it is not case sentitive and create an array from it
     let clean_string = sentence.toLowerCase().split(""); 
 
     // create a set of unique vaules of the passed in string
-    let collectedLetters = new Set(sentence.toLowerCase().replace(/\s/g,'').split("")); //this should give us each unique
+    let collectedLetters = new Set(sentence.toLowerCase().replace(/\s/g,'').split("")); 
     
     // create an object from that collection 
     let collectionL =  [...collectedLetters].reduce(
@@ -25,14 +20,14 @@ function letterPositions(sentence){
                 }
             }
 
-            key[value] = key_counter.toString(); //for each occurance of that letter  
+            key[value] = key_counter.toString();
             return key; 
         
         },
-        {}); //object to fill
+        {}); 
 
 
     return collectionL;
-}
+};
 
 module.export = letterPositions;
