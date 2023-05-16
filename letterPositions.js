@@ -1,4 +1,4 @@
-import {assertEqual} from "./assertEqual.js";
+//import {assertEqual} from "./assertEqual.js";
 
 
 //take in a sentence and collect each index of a letter 
@@ -35,5 +35,4 @@ function letterPositions(sentence){
     return collectionL;
 }
 
-//Test the countLetters function 
-console.log(letterPositions("this is my day"));
+module.export = letterPositions;

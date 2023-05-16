@@ -12,11 +12,11 @@ Thank you for checking out this project.
 
 **Install it:**
 
-`npm install @username/lotide`
+`npm install @liuprestin/lotide`
 
 **Require it:**
 
-`const _ = require('@username/lotide');`
+`const _ = require('@liuprestin/lotide');`
 
 **Call it:**
 

@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@liuprestin/lotide",
   "version": "1.0.0",
   "description": "Lotide library - clone of lodash",
   "main": "lib.js",
