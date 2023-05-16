@@ -1,3 +1,5 @@
+const eqArrays = require("./eqArrays");
+
 //Takes 2 arrays and outputs a message 
 // to the console
 function assertArraysEqual(actual, expected){
