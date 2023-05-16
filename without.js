@@ -1,5 +1,3 @@
-import { eqArrays } from "./eqArrays.js";
-import { assertArraysEqual } from "./assertArraysEqual.js";
 
 // given two arrays with basic data types
 // - original array
@@ -16,8 +14,3 @@ function without(original_arr, itemsToRemove){
     return temp;
     
 }
-
-//Sanity testing
-// without currently returns nothing... 
-// iterating through the array and eliminating values is the problem
-console.log(without([1,2,3,67,25],[3,2,5,25])); //should return [1]
