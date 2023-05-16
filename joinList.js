@@ -1,14 +1,9 @@
 /*
- * Write a function that joins the contents of conceptList together
- * into one String, concepts, with each list item separated from
- * the previous by a comma.
- *
- * To implement this we'll create a joinList function which will take
- * in any array of strings return a comma-separated string.
- *
+ * joinList(array) is a function that joins elements 
+of an array into a comma separated string
+
  * Note:
- * - no join()
- * - this function assumes an iterative approach - but can be done with filter()
+ * - not allowed to use join()
  * - iterate array with spaces
  * - replace spaces with ,
  *
@@ -35,36 +30,17 @@ function joinList(data_arr) {
   }
 
   arr = data_arr;
+
   //assuming full array to concatenate
   full_string += `${arr[0]},`;
   //iterate through each element to check for smallest element
   for (let i = 1; i < arr.length - 1; i++) {
     full_string += ` ${arr[i]},`;
   }
-  //do the last element
+  //add the last element
   full_string += ` ${arr[arr.length - 1]}`;
 
   return full_string;
 }
-
-/**
- 
-function joinList(arr) {
-  let full_string = ""; //insert the 1st element to start
-
-  //base case empty string
-  if (arr === []) {
-    return full_string;
-  }
-  //iterate through each element to check for smallest element
-  for (let i = 0; i < arr.length - 1; i++) {
-    full_string += `${arr[i]},`;
-  }
-  //do the last element
-  full_string += `${arr[arr.length - 1]}`;
-  return full_string;
-}
- 
- */
 
 module.export = joinList;

@@ -1,4 +1,5 @@
 const joinList = require('../joinList');
+const assert = require("chai").assert;
 
 // Test / Driver Code below...
 const conceptList = [
@@ -8,8 +9,17 @@ const conceptList = [
     "iteration",
     "problem solving",
   ];
+
   const concepts = joinList(conceptList);
   console.log(`Today I learned about ${concepts}.`);
   
-  console.log(joinList([]));
-  console.log(joinList("solo, solo"));
+
+  describe("#joinList", () => {
+    it("joinList('solo, solo') returns 'solo'", () => {
+      assert.strictEqual(joinList([]), "");
+    });
+    it("head(['Hello', 'World']) returns 'Hello' ", () => {
+      assert.strictEqual(joinList("solo, solo"), "solo");
+    });
+    
+  });
