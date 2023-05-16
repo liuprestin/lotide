@@ -1,5 +1,3 @@
-//import {eqArrays} from "./eqArrays.js";
-
 const eqArrays   = require('../eqArrays');
 const assertArraysEqual   = require('../assertArraysEqual');
 
