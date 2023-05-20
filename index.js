@@ -9,7 +9,7 @@ const map = require('./map');
 const min = require('./min');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
-const takeUntil = require('./countLetters');
+const countLetters = require('./countLetters');
 const without = require('./countOnly');
 
 //ES6 syntax
