@@ -1,5 +1,3 @@
-
-
 //take in a sentence and count each of the letters in that sentence 
 // Assumptions:
 // not case sensitive
@@ -19,7 +17,5 @@ function countLetters(sentence){
     return collectedLetters; 
 }
 
-//Test the countLetters function 
-console.log(countLetters("this is my day"));
 
 module.exports = countLetters;
