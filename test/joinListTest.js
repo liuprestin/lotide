@@ -15,11 +15,11 @@ const conceptList = [
   
 
   describe("#joinList", () => {
-    it("joinList('solo, solo') returns 'solo'", () => {
+    it("joinList([]) returns '' ", () => {
       assert.strictEqual(joinList([]), "");
     });
-    it("head(['Hello', 'World']) returns 'Hello' ", () => {
-      assert.strictEqual(joinList("solo, solo"), "solo");
+    it("joinList('solo, solo') returns 'solo'", () => {
+      assert.strictEqual(joinList(['solo, solo']), "solo");
     });
     
   });
