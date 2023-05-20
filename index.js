@@ -9,17 +9,8 @@ const map = require('./map');
 const min = require('./min');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
-
-/*
-// kept this for Node 12 compatibility
-module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  flatten: flatten,
-  joinList: joinList
-};
-*/
+const takeUntil = require('./countLetters');
+const without = require('./countOnly');
 
 //ES6 syntax
 module.exports = {
@@ -33,5 +24,7 @@ module.exports = {
     map,
     min,
     takeUntil,
-    without
+    without,
+    countLetters,
+    countOnly
 };

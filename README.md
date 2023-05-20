@@ -37,3 +37,5 @@ The following functions are currently implemented:
 - min :
 - takeUntil :
 - without :
+- countOnly :
+- countLetters : 

@@ -1,4 +1,3 @@
-import {assertEqual} from "./assertEqual.js";
 
 
 //take in a sentence and count each of the letters in that sentence 
@@ -22,3 +21,5 @@ function countLetters(sentence){
 
 //Test the countLetters function 
 console.log(countLetters("this is my day"));
+
+module.exports = countLetters;
