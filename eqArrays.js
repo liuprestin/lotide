@@ -13,4 +13,4 @@ function eqArrays(actual, expected){
     return true;
 }
 
-module.export = eqArrays;
+module.exports = eqArrays;

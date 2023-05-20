@@ -10,4 +10,4 @@ function assertArraysEqual(actual, expected){
     }
 }
 
-module.export = assertArraysEqual;
+module.exports = assertArraysEqual;

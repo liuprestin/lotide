@@ -13,4 +13,4 @@ function flatten(arr) {
   return rebuild;
 }
 
-module.export = flatten;
+module.exports = flatten;

@@ -30,4 +30,4 @@ function letterPositions(sentence){
     return collectionL;
 };
 
-module.export = letterPositions;
+module.exports = letterPositions;

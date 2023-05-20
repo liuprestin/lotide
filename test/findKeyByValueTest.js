@@ -1,6 +1,6 @@
-const assertArraysEqual   = require('../assertArraysEqual');
+const assertEqual   = require('../assertEqual');
 const assert = require("chai").assert;
-const eqArrays = require("../findKeyByValueTest");
+const findKeyByValue = require("../findKeyByValue");
 
 //Tests
 const bestTVShowsByGenre = { 

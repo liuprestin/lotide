@@ -43,4 +43,4 @@ function joinList(data_arr) {
   return full_string;
 }
 
-module.export = joinList;
+module.exports = joinList;
