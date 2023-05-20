@@ -14,3 +14,5 @@ function without(original_arr, itemsToRemove){
     return temp;
     
 }
+
+module.exports = without;

@@ -31,3 +31,9 @@ The following functions are currently implemented:
 - middle : return the middle values of an array 
 - flatten : given arrays in arrays --> return an array with no nested arrays
 - joinList : take two arrays and join them together
+- findKeyByValue :
+- letterPositions :
+- map :
+- min :
+- takeUntil :
+- without :
