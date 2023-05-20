@@ -20,7 +20,7 @@ Thank you for checking out this project.
 
 **Call it:**
 
-`const results = _.tail([1, 2, 3]) // => [2, 3]`
+`const results = _.tail([1, 2, 3]) // => 3`
 
 ## Documentation
 
