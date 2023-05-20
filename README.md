@@ -35,7 +35,7 @@ The following functions are currently implemented:
 - letterPositions : letterPositions(string) take in a sentence and return collection of each index of a letter 
 - map : re-create a copy of an original array modified by a callback function
 - min : determine the smallest number in an array
-- takeUntil :
+- takeUntil : slice out elements of an array starting from the beginning of the array
 - without : given an array and another array of target values - remove target values from original array
 - countOnly : given an array of strings and a target string 
 - countLetters : tabulate each unique letter in a string 
