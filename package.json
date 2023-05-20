@@ -1,6 +1,6 @@
 {
   "name": "@liuprestin/lotide",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Lotide library - clone of lodash",
   "main": "index.js",
   "scripts": {

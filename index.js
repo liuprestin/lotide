@@ -10,7 +10,7 @@ const min = require('./min');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
 const countLetters = require('./countLetters');
-const without = require('./countOnly');
+const countOnly = require('./countOnly');
 
 //ES6 syntax
 module.exports = {
